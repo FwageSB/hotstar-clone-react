@@ -1,0 +1,13 @@
+.diaply {
+  width: 100%;
+}
+.display_items {
+  display: flex;
+}
+.display_poster {
+  width: 100px;
+  transition: 0.3s;
+}
+.display_poster:hover {
+  scale: 1.3;
+}
