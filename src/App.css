@@ -1,7 +1,9 @@
 .app{
     display: flex;
+    justify-content: space-evenly;
     color: white;
+    overflow-x: hidden;
 }
 .app_main{
-    width: 100%;
+    width: 91%;
 }

@@ -1,13 +1,27 @@
-.diaply {
-  width: 100%;
+.display {
+  margin-bottom: 20px;
+  color: #fff;
 }
 .display_items {
   display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .display_poster {
-  width: 100px;
-  transition: 0.3s;
+  margin-left: 10px;
+  width: 120px;
+  transition: 0.5s;
 }
-.display_poster:hover {
+.display_poster_big {
+  margin-left: 10px;
+  height: 150px;
+  transition: 0.5s;
+}
+.display_poster:hover ,
+.display_poster_big:hover {
   scale: 1.3;
+}
+.display_items::-webkit-scrollbar {
+  display: none;
 }

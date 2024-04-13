@@ -1,16 +1,42 @@
-import './App.css'
-import Menubar from './components/Menubar'
-import Home from './components/Home'
+import "./App.css";
+import Menubar from "./components/Menubar";
+import Home from "./components/Home";
+import Movie from "./pages/movie/Movie";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useParams,
+} from "react-router-dom";
 
 function App() {
   return (
-  <div className='app'>
-    <Menubar />
-    <div className='app_main'>
-    <Home />
-    </div>
-  </div>
-  )
+    <Router>
+      <div className="app">
+        <Menubar />
+        <Routes>
+          <Route path="/home" element={<DefaultHome />} />
+          <Route path="/" element={<DefaultHome />} />
+          <Route path="/movie/:id" element={<MoviePage />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
-
-export default App
+function DefaultHome() {
+  return (
+    <div className="app_main">
+      <Home />
+    </div>
+  );
+}
+function MoviePage() {
+  // Fetch the id from the URL params
+  const {id } = useParams();
+  return (
+    <Movie
+      id={id}
+    />
+  );
+}
+export default App;

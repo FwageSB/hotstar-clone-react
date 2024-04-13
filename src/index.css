@@ -3,7 +3,6 @@
     background-color: black;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-#root:-webkit-scrollbar-thumb{
-    background-color: white;
-    color: aliceblue;
+#root::-webkit-scrollbar-track{
+    background-color: black;
 }
