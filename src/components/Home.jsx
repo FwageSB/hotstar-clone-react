@@ -7,11 +7,15 @@ function Home() {
     <div className="home">
       <Hero />
       <div className="disp">
-        <Displays title="Trending" url="trending/movie/week?" />
+        <Displays title="Trending" url="trending/movie/week?" isBig/>
+        <Displays title="YRF" url="discover/movie?with_companies=1569&"/>
+        <Displays
+          title="AGS Entertainment"
+          url="discover/movie?with_companies=5907&"
+        />
         <Displays
           title="Sree Gokulam Movies"
           url="discover/movie?with_companies=77110&"
-          isBig
         />
         <Displays title="Hotstar" url="discover/movie?with_companies=136786&" />
         <Displays title="Marvel" url="discover/movie?with_companies=7505&" />
@@ -19,11 +23,10 @@ function Home() {
           title="Hombale Movies"
           url="discover/movie?with_companies=111627&"
         />
-
         <Displays title="Top Rated" url="movie/top_rated?" isBig />
-        <Displays title="Upcoming" url="movie/upcoming?" isBig />
-        <Displays title="Pixar" url="discover/movie?with_companies=3&" />
-        <Displays title="AGS Entertainment" url="discover/movie?with_companies=5907&" />      </div>
+        <Displays title="Upcoming" url="movie/upcoming?"/>
+        <Displays title="Pixar" url="discover/movie?with_companies=3&" isBig/>
+      </div>
     </div>
   );
 }

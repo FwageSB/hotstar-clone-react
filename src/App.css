@@ -1,9 +1,9 @@
-.app{
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    overflow-x: hidden;
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(224, 239, 253);
+  overflow-x: hidden;
 }
-.app_main{
-    width: 91%;
+.app_main {
+  width: 91%;
 }

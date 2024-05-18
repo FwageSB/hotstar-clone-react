@@ -8,11 +8,11 @@ function Hero() {
 
   useEffect(() => {
     tmdbInstance
-      .get(`trending/movie/week?api_key=${API_KEY}`)
+      .get(`discover/movie?with_companies=5907&api_key=${API_KEY}`)
       .then((response) => {
-        setHeroMovie(response.data.results[1]);
+        setHeroMovie(response.data.results[0]);
         tmdbInstance
-          .get(`movie/${response.data.results[1].id}/images?api_key=${API_KEY}`)
+          .get(`movie/${response.data.results[0].id}/images?api_key=${API_KEY}`)
           .then((resp) => {
             resp.data.backdrops.map((obj) => {
               if (obj.aspect_ratio == 1.778) {

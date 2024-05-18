@@ -24,7 +24,9 @@ function Menubar() {
         <Link to="/home">
           <CiHome className="option" />
         </Link>
-        <PiTelevisionSimpleLight className="option" />
+        <Link to="/shows">
+          <PiTelevisionSimpleLight className="option" />
+        </Link>
         <GoDeviceCameraVideo className="option" />
         <CiBasketball className="option" />
         <BiCategory className="option" />
